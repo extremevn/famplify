@@ -1,0 +1,62 @@
+{
+    "UserAgent": "aws-amplify-cli/2.0",
+    "Version": "1.0",
+    "auth": {
+        "plugins": {
+            "awsCognitoAuthPlugin": {
+                "UserAgent": "aws-amplify-cli/0.1.0",
+                "Version": "0.1.0",
+                "IdentityManager": {
+                    "Default": {}
+                },
+                "CredentialsProvider": {
+                    "CognitoIdentity": {
+                        "Default": {
+                            "PoolId": "xxxxxxxxxx",
+                            "Region": "xxxxxxxxxx"
+                        }
+                    }
+                },
+                "CognitoUserPool": {
+                    "Default": {
+                        "PoolId": "xxxxxxxxx",
+                        "AppClientId": "xxxxxxxxxxxxxxxxx",
+                        "AppClientSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                        "Region": "xxxxxxxxx"
+                    }
+                },
+                "Auth": {
+                    "Default": {
+                        "OAuth": {
+                            "WebDomain": "xxxxxxxxxxxxxxxxxxxxxxx",
+                            "AppClientId": "xxxxxxxxxxxxxx",
+                            "AppClientSecret": "xxxxxxxxxx",
+                            "SignInRedirectURI": "xxxx",
+                            "SignOutRedirectURI": "xxxx://",
+                            "Scopes": [
+                                "phone",
+                                "email",
+                                "openid",
+                                "profile",
+                                "aws.cognito.signin.user.admin"
+                            ]
+                        },
+                        "authenticationFlowType": "USER_SRP_AUTH"
+                    }
+                }
+            }
+        }
+    },
+    "api": {
+        "plugins": {
+            "awsAPIPlugin": {
+                "dev-xxxxxxxxxx": {
+                    "endpointType": "REST",
+                    "endpoint": "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                    "region": "xxxxxxxxxxx",
+                    "authorizationType": "AMAZON_COGNITO_USER_POOLS"
+                }
+            }
+        }
+    }
+}
