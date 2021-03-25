@@ -1,5 +1,5 @@
 name: flutter_amplify_sdk
-description: Flutter plugin aws cognito and api
+description: An Amplify interoperate library for Flutter application development
 version: 0.0.1
 homepage: https://github.com/extremevn/famplify
 
@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  pedantic: ^1.9.2
 
 dev_dependencies:
   flutter_test:

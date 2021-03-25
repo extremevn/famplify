@@ -19,29 +19,29 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 /// SOFTWARE.
 
-const resourceNotFoundException = "ResourceNotFoundException";
-const invalidParameterException = "InvalidParameterException";
-const unexpectedLambdaException = "UnexpectedLambdaException";
-const userLambdaValidationException = "UserLambdaValidationException";
-const notAuthorizedException = "NotAuthorizedException";
-const invalidPasswordException = "InvalidPasswordException";
-const usernameExistsException = "UsernameExistsException";
-const codeDeliveryFailureException = "CodeDeliveryFailureException";
-const tooManyFailedAttemptsException = "TooManyFailedAttemptsException";
-const codeMismatchException = "CodeMismatchException";
-const expiredCodeException = "ExpiredCodeException";
-const invalidLambdaResponseException = "InvalidLambdaResponseException";
-const aliasExistsException = "AliasExistsException";
-const tooManyRequestsException = "TooManyRequestsException";
-const limitExceededException = "LimitExceededException";
-const userNotFoundException = "UserNotFoundException";
-const internalErrorException = "InternalErrorException";
-const amazonClientException = "AmazonClientException";
-const amazonServiceException = "AmazonServiceException";
-const defaultException = "DefaultException";
-const apiException = "ApiException";
-const networkException = "NetworkException";
-const unknownException = "UnknownException";
+const resourceNotFoundException = 'ResourceNotFoundException';
+const invalidParameterException = 'InvalidParameterException';
+const unexpectedLambdaException = 'UnexpectedLambdaException';
+const userLambdaValidationException = 'UserLambdaValidationException';
+const notAuthorizedException = 'NotAuthorizedException';
+const invalidPasswordException = 'InvalidPasswordException';
+const usernameExistsException = 'UsernameExistsException';
+const codeDeliveryFailureException = 'CodeDeliveryFailureException';
+const tooManyFailedAttemptsException = 'TooManyFailedAttemptsException';
+const codeMismatchException = 'CodeMismatchException';
+const expiredCodeException = 'ExpiredCodeException';
+const invalidLambdaResponseException = 'InvalidLambdaResponseException';
+const aliasExistsException = 'AliasExistsException';
+const tooManyRequestsException = 'TooManyRequestsException';
+const limitExceededException = 'LimitExceededException';
+const userNotFoundException = 'UserNotFoundException';
+const internalErrorException = 'InternalErrorException';
+const amazonClientException = 'AmazonClientException';
+const amazonServiceException = 'AmazonServiceException';
+const defaultException = 'DefaultException';
+const apiException = 'ApiException';
+const networkException = 'NetworkException';
+const unknownException = 'UnknownException';
 
 class AmplifySdkException implements Exception {
   final String code;
@@ -50,5 +50,5 @@ class AmplifySdkException implements Exception {
   AmplifySdkException(this.code, this.message);
 
   @override
-  String toString() => "Error code: $code, message: $message ";
+  String toString() => 'Error code: $code, message: $message ';
 }

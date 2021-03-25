@@ -1,3 +1,4 @@
+include: package:pedantic/analysis_options.yaml
 ##
 # Lint rules to be used for apps without developer facing API. i.e. command line tools and Flutter applications
 ##

@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_amplify_sdk/flutter_amplify_sdk.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('flutter_amplify_sdk');
+  const channel = MethodChannel('flutter_amplify_sdk');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 

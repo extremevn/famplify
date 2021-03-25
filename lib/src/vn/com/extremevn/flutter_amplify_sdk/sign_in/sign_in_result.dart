@@ -37,20 +37,13 @@ class AuthSignInResult {
   AuthSignInResult(this._nextStep, {this.isSignInComplete});
 
   AuthNextSignInStep get nextStep => _nextStep;
-
 }
 
-
-class AuthNextSignInStep{
+class AuthNextSignInStep {
   final AuthSignInStep signInStep;
   final Map<String, String> additionalInfo;
   final AuthCodeDeliveryDetails codeDeliveryDetails;
 
   AuthNextSignInStep(
       this.signInStep, this.additionalInfo, this.codeDeliveryDetails);
-
-
 }
-
-
-

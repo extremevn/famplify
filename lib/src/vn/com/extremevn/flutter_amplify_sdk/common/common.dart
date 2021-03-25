@@ -24,17 +24,17 @@ import 'package:flutter_amplify_sdk/src/vn/com/extremevn/flutter_amplify_sdk/aut
 
 AuthSignInStep parseAuthSignInStep(String authSignInStep) {
   switch (authSignInStep) {
-    case "CONFIRM_SIGN_IN_WITH_SMS_MFA_CODE":
+    case 'CONFIRM_SIGN_IN_WITH_SMS_MFA_CODE':
       return AuthSignInStep.confirmSignInWithSmsMfaCode;
-    case "CONFIRM_SIGN_IN_WITH_CUSTOM_CHALLENGE":
+    case 'CONFIRM_SIGN_IN_WITH_CUSTOM_CHALLENGE':
       return AuthSignInStep.confirmSignInWithCustomChallenge;
-    case "CONFIRM_SIGN_IN_WITH_NEW_PASSWORD":
+    case 'CONFIRM_SIGN_IN_WITH_NEW_PASSWORD':
       return AuthSignInStep.confirmSignInWithNewPassword;
-    case "RESET_PASSWORD":
+    case 'RESET_PASSWORD':
       return AuthSignInStep.resetPassword;
-    case "CONFIRM_SIGN_UP":
+    case 'CONFIRM_SIGN_UP':
       return AuthSignInStep.confirmSignUp;
-    case "NEW_PASSWORD_REQUIRED":
+    case 'NEW_PASSWORD_REQUIRED':
       return AuthSignInStep.done;
     default:
       return AuthSignInStep.done;
@@ -43,10 +43,9 @@ AuthSignInStep parseAuthSignInStep(String authSignInStep) {
 
 AuthResetPasswordStep parseAuthResetPasswordStep(String authResetPasswordStep) {
   switch (authResetPasswordStep) {
-    case "CONFIRM_RESET_PASSWORD_WITH_CODE":
+    case 'CONFIRM_RESET_PASSWORD_WITH_CODE':
       return AuthResetPasswordStep.confirmResetPasswordWithCode;
     default:
       return AuthResetPasswordStep.done;
   }
 }
-

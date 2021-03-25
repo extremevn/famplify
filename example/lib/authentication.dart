@@ -234,7 +234,8 @@ class _AuthenticationState extends State<Authentication> {
                       FlutterAmplifySdk.confirmResetPassword(
                               userName, passwordNew, confirmRestPassCode)
                           .then((confirmResetPassResult) {
-                        debugPrint('Confirm Reset pass: $confirmResetPassResult');
+                        debugPrint(
+                            'Confirm Reset pass: $confirmResetPassResult');
                         _hideLoading();
                       }).catchError((error) {
                         debugPrint(error.toString());
